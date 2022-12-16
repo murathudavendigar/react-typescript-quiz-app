@@ -48,7 +48,7 @@ To create an application app with React and TypeScript.
 ## Screenshot
 
 <p align="center">
-<a href="https://react-typescript-quiz-app-nu.vercel.app/"><img src="https://media-exp1.licdn.com/dms/image/C4D22AQG1TNPkPVWNhw/feedshare-shrink_800/0/1669823576628?e=1672876800&v=beta&t=cz18JaR2CbWLyrJxNrhtngnrFWLQa6NljboAZHVrdgM" alt="screenshot"></a>
+<a href="https://react-typescript-quiz-app-nu.vercel.app/"><img src="https://user-images.githubusercontent.com/109613328/208204716-ce99c3af-0e59-4dae-bdfa-0a19e7a8ac44.gif" alt="screenshot"></a>
 </p>
 
 ## Links
