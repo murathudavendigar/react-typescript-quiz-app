@@ -1,9 +1,10 @@
 import styled, { createGlobalStyle } from "styled-components";
-import bgImage from "./images/summer-bg.jpg";
+import bgImage from "./images/winter-bg.jpg";
+import bgImageSm from "./images/summer-bg.jpg";
 
 export const GlobalStyle = createGlobalStyle`
 html{
-    height: 100%;
+    height: 100vh;
 }
 
 body {
@@ -11,11 +12,17 @@ body {
     padding: 0 20px;
     background-image: url(${bgImage});
     background-size: cover;
-display: flex;
-justify-content: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    @media (max-width:768px) {
+      background-image: url(${bgImageSm});
+      background-size: cover;
+    }
 }
 
 * {
+    
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
