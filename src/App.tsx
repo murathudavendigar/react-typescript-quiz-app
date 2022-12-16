@@ -94,7 +94,9 @@ const App = () => {
           </>
         ) : null}
 
-        {gameOver || <p className="score">Score: {score}</p>}
+        {gameOver || userAnswers.length === TOTAL_QUESTIONS || (
+          <p className="score">Score: {score}</p>
+        )}
         {loading && <img src={loadingImage} alt="loadingImg" />}
         {!loading && !gameOver && (
           <QuestionCard
@@ -115,9 +117,13 @@ const App = () => {
           </button>
         ) : null}
         {userAnswers.length === TOTAL_QUESTIONS && (
-          <button className="start" onClick={() => window.location.reload()}>
-            Try Again
-          </button>
+          <>
+            <p className="score">Game Over</p>
+            <p className="score">Your Score is : {score}</p>
+            <button className="start" onClick={() => window.location.reload()}>
+              Try Again
+            </button>
+          </>
         )}
       </Wrapper>
     </>
